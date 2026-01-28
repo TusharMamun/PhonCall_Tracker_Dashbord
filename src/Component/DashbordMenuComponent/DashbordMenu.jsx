@@ -7,7 +7,7 @@ import { IoIosLogOut } from 'react-icons/io'
 const DashbordMenu = () => {
     const location = useLocation()
   return (
-    <div className='hidden md:block lg:block'>
+    <div className='hidden md:block lg:block h-screen'>
 
   <div className='flex flex-col items-center justify-center'>
           <div className='mt-8'>
@@ -30,7 +30,7 @@ const DashbordMenu = () => {
                     }
                   `}
                 >
-                  <span className="text-lg">
+                  <span>
                     {item.icon}
                   </span>
                   <span className="text-[16px] font-medium text-white">

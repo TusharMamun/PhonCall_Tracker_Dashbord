@@ -1,4 +1,4 @@
-import { CiCalendar } from "react-icons/ci";
+import { CiCalendar, CiCalendarDate, CiCircleAlert } from "react-icons/ci";
 import { FaCalendarCheck, FaClock, FaExchangeAlt, FaPhone, FaPhoneAlt, FaRobot, FaTimes } from "react-icons/fa";
 import { IoSettingsOutline } from "react-icons/io5";
 import { MdHome } from "react-icons/md";
@@ -8,6 +8,7 @@ import Arrowimg from '../assets/Arrowimg.png'
 import phonImg from '../assets/Phon.png'
 import croosimg from '../assets/Cross.png'
 import Aibort from '../assets/AiBot.png'
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 export const sidebarItems = [
   {
@@ -77,7 +78,7 @@ export const dashboardStats = [
     id: 4,
     title: "Appointments Booked",
     value: 34,
-    change: "8%",
+    change: "+8%",
     icon: <img src={calenderimg} alt="Phone" className="w-12 h-12" />,
    
   },
@@ -99,6 +100,207 @@ export const dashboardStats = [
   
   }
 ];
+
+  export const chartData = [
+    { day: 'Mon', value: 100 },
+    { day: 'Tue', value: 75 },
+    { day: 'Wed', value: 50 },
+    { day: 'Thu', value: 25 },
+    { day: 'Fri', value: 60 },
+    { day: 'Sat', value: 80 },
+    { day: 'Sun', value: 40 }
+  ];
+
+  export const activities = [
+  {
+    id: 1,
+    text: "Al booked appointment for iPhone 13 screen repair",
+    timestamp: "2 min ago",
+color: "green",
+
+  },
+  {
+    id: 2,
+    text: "Warm transfer to technician - Software issue",
+    timestamp: "5 min ago",
+     color: "yellow"
+  },
+  {
+    id: 3,
+    text: "Quote provided for iPad battery replacement",
+    timestamp: "8 min ago",
+    color: "green",
+  },
+  {
+    id: 4,
+    text: "Call dropped after 12 seconds",
+    timestamp: "15 min ago",
+    color: "red",
+  }
+];
+
+
+// reuest age
+ export  const repairData = [
+    { name: 'Screen Repair', requests: 156, total: 200 },
+    { name: 'Battery Replacement', requests: 89, total: 200 },
+    { name: 'Back Glass Repair', requests: 67, total: 200 },
+    { name: 'Software Issues', requests: 45, total: 200 },
+  ];
+
+
+  export const callActivities = [
+  {
+    id: 1,
+    phoneNumber: "+1 (555) 345-6789",
+    date: "2025-12-16",
+    time: "09:42 AM",
+    timestamp: "2025-12-16 • 09:42 AM",
+    status: "AI Resolved",
+    duration: "5:23",
+    action: "Quote Provided",
+    issueType: "Screen"
+  },
+  {
+    id: 2,
+    phoneNumber: "+1 (555) 345-6789",
+    date: "2025-12-16",
+    time: "09:42 AM",
+    timestamp: "2025-12-16 • 09:42 AM",
+    status: "Warm Transfer",
+    duration: "5:23",
+    action: "Escalated to technician",
+    issueType: "Software"
+  },
+  {
+    id: 3,
+    phoneNumber: "+1 (555) 345-6789",
+    date: "2025-12-16",
+    time: "09:42 AM",
+    timestamp: "2025-12-16 • 09:42 AM",
+    status: "Appointment",
+    duration: "5:23",
+    action: "Appointment Booked",
+    issueType: "Battery"
+  },
+  {
+    id: 4,
+    phoneNumber: "+1 (555) 345-6789",
+    date: "2025-12-16",
+    time: "09:42 AM",
+    timestamp: "2025-12-16 • 09:42 AM",
+    status: "Dropped",
+    duration: "0:20",
+    action: "Call Dropped",
+    issueType: "Unknown"
+  },
+  {
+    id: 5,
+    phoneNumber: "+1 (555) 345-6789",
+    date: "2025-12-16",
+    time: "09:42 AM",
+    timestamp: "2025-12-16 • 09:42 AM",
+    status: "AI Resolved",
+    duration: "5:23",
+    action: "Quote Provided",
+    issueType: "Screen"
+  }
+];
+
+// Or as a React component data:
+export const callActivitiesData = [
+  {
+    id: 1,
+    phone: "+1 (555) 345-6789",
+    datetime: "2025-12-16 • 09:42 AM",
+    status: "AI Resolved",
+    duration: "5:23",
+    description: "Quote Provided",
+    category: "Screen"
+  },
+  {
+    id: 2,
+    phone: "+1 (555) 345-6789",
+    datetime: "2025-12-16 • 09:42 AM",
+    status: "Warm Transfer",
+    duration: "5:23",
+    description: "Escalated to technician",
+    category: "Software"
+  },
+  {
+    id: 3,
+    phone: "+1 (555) 345-6789",
+    datetime: "2025-12-16 • 09:42 AM",
+    status: "Appointment",
+    duration: "5:23",
+    description: "Appointment Booked",
+    category: "Battery"
+  },
+  {
+    id: 4,
+    phone: "+1 (555) 345-6789",
+    datetime: "2025-12-16 • 09:42 AM",
+    status: "Dropped",
+    duration: "0:20",
+    description: "Call Dropped",
+    category: "Unknown"
+  },
+  {
+    id: 5,
+    phone: "+1 (555) 345-6789",
+    datetime: "2025-12-16 • 09:42 AM",
+    status: "AI Resolved",
+    duration: "5:23",
+    description: "Quote Provided",
+    category: "Screen"
+  }
+];
+
+export const bookingStats = [
+  {
+    id: 1,
+    title: "Total Booked",
+    value: 34,
+    subText: "+8 this week",
+    status: "positive",
+    icon: <CiCalendarDate className="text-blue-400 w-5 h-5"/>, 
+  },
+  {
+    id: 2,
+    title: "AI Booked",
+    value: 28,
+    subText: "82% of total",
+    status: "success",
+    icon: <IoMdCheckmarkCircleOutline   className="text-green-400 w-5 h-5"/>, 
+  },
+  {
+    id: 3,
+    title: "Pending",
+    value: 3,
+    subText: "Awaiting confirmation",
+    status: "warning",
+    icon: <CiCircleAlert   className="text-yellow-400 w-5 h-5"/>, 
+  },
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // export const dashboardStats = [
 //   {
 //     id: 1,

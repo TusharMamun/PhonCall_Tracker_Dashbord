@@ -6,27 +6,28 @@ import MobileDashbordMenu from '../Component/DashbordMenuComponent/MobileDashbor
 
 const DashbordLayout = () => {
   return (
-<div className="py-4 px-2">
-  <div className="grid grid-cols-12 gap-6">
-    <div className="hidden lg:block lg:col-span-2">
-      <DashbordMenu />
-    </div>
-    
+    <div className="py-4 px-2">
+      <div className="grid grid-cols-12 gap-6">
 
-    <div className="block lg:hidden">
-      <MobileDashbordMenu />
-    </div>
-    
+        <div className="hidden lg:block lg:col-span-2">
+          <div className="fixed left-2 top-4 w-[calc(16.666%-0.5rem)]">
+            <DashbordMenu />
+          </div>
+        </div>
 
-    <div className="col-span-12 lg:col-span-10">
-      <Header />
-      
-      <div className="mt-6 outletbg max-h-screen">
-        <Outlet />
+        <div className="block lg:hidden">
+          <MobileDashbordMenu />
+        </div>
+        
+        <div className="col-span-12 lg:col-start-3 lg:col-span-10">
+          <Header />
+          
+          <div className="mt-6 outletbg overflow-y-auto max-h-[calc(100vh-8rem)]">
+            <Outlet />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
   )
 }
 
