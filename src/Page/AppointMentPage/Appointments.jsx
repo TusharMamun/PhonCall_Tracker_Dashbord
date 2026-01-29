@@ -2,6 +2,7 @@ import React from 'react'
 import BookingStatus from './BookingStatus'
 import BookinLink from './BookinLink'
 import AppointMentTable from './AppointMentTable'
+import Pagination from './Pagination'
 
 const Appointments = () => {
   return (
@@ -14,6 +15,9 @@ const Appointments = () => {
 </div>
 <div>
   <AppointMentTable/>
+</div>
+<div>
+  <Pagination/>
 </div>
  
  </div>

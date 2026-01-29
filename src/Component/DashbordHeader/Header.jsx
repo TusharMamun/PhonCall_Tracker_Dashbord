@@ -11,7 +11,7 @@ const Header = () => {
     location.pathname === '/' || location.pathname === '/dashboard' 
       ? 'Dashboard Overview' 
     : location.pathname === '/call-logs' 
-      ? 'Call Logs' 
+      ? 'Call Logs & History' 
     : location.pathname === '/appointments' 
       ? 'Appointments' 
     : location.pathname === '/settings' 
@@ -31,7 +31,7 @@ const Header = () => {
   </div>
 
   <div className="avatar">
-    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-20 rounded-full">
+    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-20 lg:h-20 rounded-full">
       <img
         alt="User avatar"
         src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"

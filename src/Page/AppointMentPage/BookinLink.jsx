@@ -8,7 +8,7 @@ const BookinLink = () => {
           <h1 className='text-[16px] font-normal text-white my-4'>Booking Link</h1>
       <div className='flex items-center gap-3'>
         <input 
-          className='text-white text-[16px] font-normal w-full border rounded-md border-white py-3 px-4 placeholder-white inputBlokingFild' 
+          className='text-white text-[16px] font-normal w-full border  rounded-md border-green-200 py-3 px-4 placeholder-white inputBlokingFild' 
           placeholder='https://techstore.com/book?id=store123' 
           type="text" 
         />

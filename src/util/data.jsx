@@ -283,7 +283,68 @@ export const bookingStats = [
   },
 ];
 
-
+export const bookingData = [
+  {
+    clientName: 'Jane.D',
+    clientPhone: '01960685765',
+    clientEmail: 'admin@gmail.com',
+    device: 'Apple/Iphone 13pro',
+    repairType: 'Screen',
+    date: '02/06/2026',
+    slotNo: '1',
+    startTime: '09:00'
+  },
+  {
+    clientName: 'John.S',
+    clientPhone: '01712345678',
+    clientEmail: 'john.smith@email.com',
+    device: 'Samsung/Galaxy S23',
+    repairType: 'Battery',
+    date: '03/06/2026',
+    slotNo: '2',
+    startTime: '11:00'
+  },
+  {
+    clientName: 'Robert.C',
+    clientPhone: '01898765432',
+    clientEmail: 'robert.c@techmail.com',
+    device: 'Google/Pixel 7',
+    repairType: 'Camera',
+    date: '04/06/2026',
+    slotNo: '3',
+    startTime: '14:00'
+  },
+  {
+    clientName: 'Sarah.M',
+    clientPhone: '01611223344',
+    clientEmail: 'sarah.miller@work.com',
+    device: 'OnePlus/11R',
+    repairType: 'Charging Port',
+    date: '05/06/2026',
+    slotNo: '1',
+    startTime: '10:30'
+  },
+  {
+    clientName: 'Mike.T',
+    clientPhone: '01555667788',
+    clientEmail: 'mike.t@business.com',
+    device: 'Xiaomi/Redmi Note 12',
+    repairType: 'Software',
+    date: '06/06/2026',
+    slotNo: '4',
+    startTime: '15:45'
+  },
+  {
+    clientName: 'Emma.W',
+    clientPhone: '01999887766',
+    clientEmail: 'emma.w@personal.com',
+    device: 'Apple/Iphone 14',
+    repairType: 'Water Damage',
+    date: '07/06/2026',
+    slotNo: '2',
+    startTime: '13:15'
+  }
+];
 
 
 
